@@ -26,6 +26,7 @@
 		FC5D1A9A193F113D00F6D3DD /* boardingCards.json in Resources */ = {isa = PBXBuildFile; fileRef = FC5D1A99193F113D00F6D3DD /* boardingCards.json */; };
 		FC5D1AA0193F119800F6D3DD /* DetailOfTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A9D193F119800F6D3DD /* DetailOfTransport.m */; };
 		FC5D1AA1193F119800F6D3DD /* BoardingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A9F193F119800F6D3DD /* BoardingCard.m */; };
+		FC5D1AAB193F210100F6D3DD /* DeparturePlaceAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1AAA193F210100F6D3DD /* DeparturePlaceAlgorithm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		FC5D1A9D193F119800F6D3DD /* DetailOfTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOfTransport.m; sourceTree = "<group>"; };
 		FC5D1A9E193F119800F6D3DD /* BoardingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardingCard.h; sourceTree = "<group>"; };
 		FC5D1A9F193F119800F6D3DD /* BoardingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardingCard.m; sourceTree = "<group>"; };
+		FC5D1AA9193F210100F6D3DD /* DeparturePlaceAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeparturePlaceAlgorithm.h; sourceTree = "<group>"; };
+		FC5D1AAA193F210100F6D3DD /* DeparturePlaceAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeparturePlaceAlgorithm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 				FC5D1A91193F0E3900F6D3DD /* CardsTableViewController */,
 				FC5D1A98193F0FEA00F6D3DD /* ListViewController */,
 				FC5D1AA2193F11C700F6D3DD /* BoardingCard */,
+				FC5D1AAC193F210700F6D3DD /* Algorithm */,
 				FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */,
 				FC5D1A60193F0B1B00F6D3DD /* Supporting Files */,
 			);
@@ -205,6 +209,15 @@
 				FC5D1A9F193F119800F6D3DD /* BoardingCard.m */,
 			);
 			name = BoardingCard;
+			sourceTree = "<group>";
+		};
+		FC5D1AAC193F210700F6D3DD /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D1AA9193F210100F6D3DD /* DeparturePlaceAlgorithm.h */,
+				FC5D1AAA193F210100F6D3DD /* DeparturePlaceAlgorithm.m */,
+			);
+			name = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +322,7 @@
 				FC5D1AA0193F119800F6D3DD /* DetailOfTransport.m in Sources */,
 				FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */,
 				FC5D1A6A193F0B1B00F6D3DD /* AppDelegate.m in Sources */,
+				FC5D1AAB193F210100F6D3DD /* DeparturePlaceAlgorithm.m in Sources */,
 				FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */,
 				FC5D1AA1193F119800F6D3DD /* BoardingCard.m in Sources */,
 				FC5D1A66193F0B1B00F6D3DD /* main.m in Sources */,

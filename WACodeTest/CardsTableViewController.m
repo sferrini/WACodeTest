@@ -14,6 +14,8 @@
 
 #import "BoardingCard.h"
 
+#import "DeparturePlaceAlgorithm.h"
+
 @interface CardsTableViewController ()
 
 @property (strong, nonatomic) NSMutableArray *boardingCardsArray;
@@ -78,6 +80,7 @@
 
 - (IBAction)sortTrip:(id)sender
 {
+    NSLog(@"%@", [DeparturePlaceAlgorithm findDeparturePlaceWithCards:self.boardingCardsArray]);
     
     [self.tableView reloadData];
     
@@ -128,7 +131,6 @@
         ListViewController *vc = [segue destinationViewController];
         
         vc.boardingCardsArray = self.boardingCardsArray;
-        
     }
 }
 

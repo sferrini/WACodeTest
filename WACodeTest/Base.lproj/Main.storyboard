@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="-442" y="-100"/>
         </scene>
-        <!--List View Controller-->
+        <!--List View Controller - List-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ListViewController" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0u8-di-pti">
+                    <navigationItem key="navigationItem" title="List" id="0u8-di-pti">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="mqw-YC-rez">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tiN-Z2-UU6">
                                 <rect key="frame" x="16" y="5" width="71" height="33"/>
