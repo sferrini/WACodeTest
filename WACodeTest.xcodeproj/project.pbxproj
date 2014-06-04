@@ -14,7 +14,6 @@
 		FC5D1A66193F0B1B00F6D3DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A65193F0B1B00F6D3DD /* main.m */; };
 		FC5D1A6A193F0B1B00F6D3DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A69193F0B1B00F6D3DD /* AppDelegate.m */; };
 		FC5D1A6D193F0B1B00F6D3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5D1A6B193F0B1B00F6D3DD /* Main.storyboard */; };
-		FC5D1A70193F0B1B00F6D3DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A6F193F0B1B00F6D3DD /* ViewController.m */; };
 		FC5D1A72193F0B1B00F6D3DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */; };
 		FC5D1A79193F0B1B00F6D3DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5D1A78193F0B1B00F6D3DD /* XCTest.framework */; };
 		FC5D1A7A193F0B1B00F6D3DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5D1A59193F0B1B00F6D3DD /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		FC5D1A85193F0B1B00F6D3DD /* WACodeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A84193F0B1B00F6D3DD /* WACodeTestTests.m */; };
 		FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */; };
 		FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */; };
+		FC5D1A97193F0FDF00F6D3DD /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		FC5D1A68193F0B1B00F6D3DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC5D1A69193F0B1B00F6D3DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC5D1A6C193F0B1B00F6D3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC5D1A6E193F0B1B00F6D3DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC5D1A6F193F0B1B00F6D3DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC5D1A77193F0B1B00F6D3DD /* WACodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WACodeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5D1A78193F0B1B00F6D3DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +57,8 @@
 		FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsTableViewController.m; sourceTree = "<group>"; };
 		FC5D1A92193F0E6700F6D3DD /* CustomCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCardTableViewCell.h; sourceTree = "<group>"; };
 		FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCardTableViewCell.m; sourceTree = "<group>"; };
+		FC5D1A95193F0FDF00F6D3DD /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +121,8 @@
 				FC5D1A68193F0B1B00F6D3DD /* AppDelegate.h */,
 				FC5D1A69193F0B1B00F6D3DD /* AppDelegate.m */,
 				FC5D1A6B193F0B1B00F6D3DD /* Main.storyboard */,
-				FC5D1A91193F0E3900F6D3DD /* CardsTableView */,
-				FC5D1A6E193F0B1B00F6D3DD /* ViewController.h */,
-				FC5D1A6F193F0B1B00F6D3DD /* ViewController.m */,
+				FC5D1A91193F0E3900F6D3DD /* CardsTableViewController */,
+				FC5D1A98193F0FEA00F6D3DD /* ListViewController */,
 				FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */,
 				FC5D1A60193F0B1B00F6D3DD /* Supporting Files */,
 			);
@@ -159,7 +158,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FC5D1A91193F0E3900F6D3DD /* CardsTableView */ = {
+		FC5D1A91193F0E3900F6D3DD /* CardsTableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FC5D1A8E193F0E2A00F6D3DD /* CardsTableViewController.h */,
@@ -167,7 +166,16 @@
 				FC5D1A92193F0E6700F6D3DD /* CustomCardTableViewCell.h */,
 				FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */,
 			);
-			name = CardsTableView;
+			name = CardsTableViewController;
+			sourceTree = "<group>";
+		};
+		FC5D1A98193F0FEA00F6D3DD /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D1A95193F0FDF00F6D3DD /* ListViewController.h */,
+				FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */,
+			);
+			name = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5D1A70193F0B1B00F6D3DD /* ViewController.m in Sources */,
+				FC5D1A97193F0FDF00F6D3DD /* ListViewController.m in Sources */,
 				FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */,
 				FC5D1A6A193F0B1B00F6D3DD /* AppDelegate.m in Sources */,
 				FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */,
