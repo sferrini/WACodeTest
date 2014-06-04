@@ -21,6 +21,8 @@
 		FC5D1A7B193F0B1B00F6D3DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5D1A5D193F0B1B00F6D3DD /* UIKit.framework */; };
 		FC5D1A83193F0B1B00F6D3DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC5D1A81193F0B1B00F6D3DD /* InfoPlist.strings */; };
 		FC5D1A85193F0B1B00F6D3DD /* WACodeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A84193F0B1B00F6D3DD /* WACodeTestTests.m */; };
+		FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */; };
+		FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		FC5D1A80193F0B1B00F6D3DD /* WACodeTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WACodeTestTests-Info.plist"; sourceTree = "<group>"; };
 		FC5D1A82193F0B1B00F6D3DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC5D1A84193F0B1B00F6D3DD /* WACodeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WACodeTestTests.m; sourceTree = "<group>"; };
+		FC5D1A8E193F0E2A00F6D3DD /* CardsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsTableViewController.h; sourceTree = "<group>"; };
+		FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsTableViewController.m; sourceTree = "<group>"; };
+		FC5D1A92193F0E6700F6D3DD /* CustomCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCardTableViewCell.h; sourceTree = "<group>"; };
+		FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCardTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 				FC5D1A68193F0B1B00F6D3DD /* AppDelegate.h */,
 				FC5D1A69193F0B1B00F6D3DD /* AppDelegate.m */,
 				FC5D1A6B193F0B1B00F6D3DD /* Main.storyboard */,
+				FC5D1A91193F0E3900F6D3DD /* CardsTableView */,
 				FC5D1A6E193F0B1B00F6D3DD /* ViewController.h */,
 				FC5D1A6F193F0B1B00F6D3DD /* ViewController.m */,
 				FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */,
@@ -150,6 +157,17 @@
 				FC5D1A81193F0B1B00F6D3DD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC5D1A91193F0E3900F6D3DD /* CardsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D1A8E193F0E2A00F6D3DD /* CardsTableViewController.h */,
+				FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */,
+				FC5D1A92193F0E6700F6D3DD /* CustomCardTableViewCell.h */,
+				FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */,
+			);
+			name = CardsTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5D1A70193F0B1B00F6D3DD /* ViewController.m in Sources */,
+				FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */,
 				FC5D1A6A193F0B1B00F6D3DD /* AppDelegate.m in Sources */,
+				FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */,
 				FC5D1A66193F0B1B00F6D3DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
