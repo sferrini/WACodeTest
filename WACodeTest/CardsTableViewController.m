@@ -84,22 +84,27 @@
     return self.boardingCardsArray.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CustomCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    //Get boardingCard from boardingCardsArray.
+    BoardingCard *boardingCard = [self.boardingCardsArray objectAtIndex:indexPath.row];
+    
+    //Cell settings
+    cell.travelSectionLabel.text = [NSString stringWithFormat:@"%@ - %@", boardingCard.departureCity, boardingCard.destinationCity];
+    
+    cell.vehicleLabel.text = boardingCard.detailOfTransport.vehicle;
     
     return cell;
 }
 
+#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
 
 #pragma mark - Navigation
 
