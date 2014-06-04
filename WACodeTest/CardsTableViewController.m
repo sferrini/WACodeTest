@@ -76,6 +76,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sortTrip:(id)sender
+{
+    
+    [self.tableView reloadData];
+    
+    self.sortTripButton.enabled = NO;
+    self.routeButton.enabled = YES;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -117,6 +126,8 @@
     if ([[segue identifier] isEqualToString:@"list"]) {
         // Get reference to the destination view controller
         ListViewController *vc = [segue destinationViewController];
+        
+        vc.boardingCardsArray = self.boardingCardsArray;
         
     }
 }

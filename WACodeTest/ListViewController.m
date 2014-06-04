@@ -8,6 +8,8 @@
 
 #import "ListViewController.h"
 
+#import "BoardingCard.h"
+
 @interface ListViewController ()
 
 @end
@@ -27,6 +29,47 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.listTextView.layer.cornerRadius = 10;
+    
+    [self createList];
+}
+
+- (void)createList
+{
+    NSMutableString *tripList = [[NSMutableString alloc] init];
+    
+    for (BoardingCard *boardingCard in self.boardingCardsArray) {
+        
+        [tripList appendString:@"- "];
+        
+        [tripList appendString:[NSString stringWithFormat:@"From %@, ", boardingCard.departureCity]];
+        [tripList appendString:[NSString stringWithFormat:@"take %@ ", boardingCard.detailOfTransport.vehicle]];
+        
+        if (boardingCard.detailOfTransport.number) {
+            [tripList appendString:[NSString stringWithFormat:@"%@ ", boardingCard.detailOfTransport.number]];
+        }
+        
+        [tripList appendString:[NSString stringWithFormat:@"to %@, ", boardingCard.destinationCity]];
+        
+        if (![boardingCard.detailOfTransport.seat isEqual:@""]) {
+            [tripList appendString:[NSString stringWithFormat:@"your seat is %@. ", boardingCard.detailOfTransport.seat]];
+        }
+        
+        if (![boardingCard.detailOfTransport.gate isEqual:@""]){
+            [tripList appendString:[NSString stringWithFormat:@"The gate is %@. ", boardingCard.detailOfTransport.gate]];
+        }
+        
+        if (![boardingCard.detailOfTransport.info isEqualToString:@""]){
+            [tripList appendString:[NSString stringWithFormat:@"%@. ", boardingCard.detailOfTransport.info]];
+        }
+        
+        [tripList appendString:@"\n\n"];
+    }
+    
+    [tripList appendString:@"You have arrived at your final destination!"];
+    
+    [self.listTextView setText:tripList];
 }
 
 - (void)didReceiveMemoryWarning

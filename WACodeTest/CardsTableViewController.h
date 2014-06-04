@@ -11,5 +11,6 @@
 @interface CardsTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *routeButton;
+@property (strong, nonatomic) IBOutlet UIButton *sortTripButton;
 
 @end

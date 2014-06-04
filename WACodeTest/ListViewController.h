@@ -10,4 +10,8 @@
 
 @interface ListViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *listTextView;
+
+@property (strong, nonatomic) NSArray *boardingCardsArray;
+
 @end

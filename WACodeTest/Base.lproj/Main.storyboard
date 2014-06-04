@@ -55,6 +55,9 @@
                                 <state key="normal" title="Sort trip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortTrip:" destination="TWP-uz-4nN" eventType="touchUpInside" id="8GE-ZT-JAQ"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="iSQ-Z9-E3d">
@@ -66,13 +69,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="push" id="mPJ-A4-8kZ"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="list" id="mPJ-A4-8kZ"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="routeButton" destination="8OM-xv-EM4" id="eCP-lV-2h1"/>
+                        <outlet property="sortTripButton" destination="bqH-xE-S2b" id="eJ9-y2-yXJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUa-qS-VtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,6 +141,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listTextView" destination="bzG-mB-pxs" id="d8d-oY-5Cj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <exit id="jS7-5A-AKg" userLabel="Exit" sceneMemberID="exit"/>
