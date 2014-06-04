@@ -47,7 +47,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Cards" id="9wg-wc-dhf">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="55v-on-X5G">
+                        <barButtonItem key="leftBarButtonItem" id="55v-on-X5G">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bqH-xE-S2b">
                                 <rect key="frame" x="16" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="iSQ-Z9-E3d">
+                        <barButtonItem key="rightBarButtonItem" id="iSQ-Z9-E3d">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8OM-xv-EM4">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -127,7 +127,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="0u8-di-pti">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="mqw-YC-rez">
+                        <barButtonItem key="leftBarButtonItem" id="mqw-YC-rez">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tiN-Z2-UU6">
                                 <rect key="frame" x="16" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
