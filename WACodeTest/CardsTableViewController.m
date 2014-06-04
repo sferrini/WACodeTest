@@ -78,9 +78,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Algorithm NextPlace
+
+- (void)nextPlaceFrom:(NSString *)departurePlace
+            fromIndex:(int)index
+{
+    int i = 0;
+    for (BoardingCard *boardingCard in self.boardingCardsArray) {
+        
+        if ([boardingCard.departureCity isEqualToString:departurePlace]) {
+            
+            [self.boardingCardsArray exchangeObjectAtIndex:index
+                                         withObjectAtIndex:i];
+            index++;
+            
+            BoardingCard *nextP = [self.boardingCardsArray objectAtIndex:index -1];
+            
+            [self nextPlaceFrom:nextP.destinationCity
+                      fromIndex:index];
+            
+            return;
+        }
+        
+        i++;
+    }
+}
+
 - (IBAction)sortTrip:(id)sender
 {
-    NSLog(@"%@", [DeparturePlaceAlgorithm findDeparturePlaceWithCards:self.boardingCardsArray]);
+    [self nextPlaceFrom:[DeparturePlaceAlgorithm findDeparturePlaceWithCards:self.boardingCardsArray]
+              fromIndex:0];
     
     [self.tableView reloadData];
     
