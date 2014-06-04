@@ -10,4 +10,6 @@
 
 @interface CardsTableViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *routeButton;
+
 @end

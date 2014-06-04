@@ -12,7 +12,11 @@
 
 #import "ListViewController.h"
 
+#import "BoardingCard.h"
+
 @interface CardsTableViewController ()
+
+@property (strong, nonatomic) NSMutableArray *boardingCardsArray;
 
 @end
 
@@ -31,11 +35,39 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.routeButton.enabled = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initAllBoardingCards];
+}
+
+#pragma mark - BoardingCards
+
+- (void)initAllBoardingCards
+{
+    self.boardingCardsArray = [[NSMutableArray alloc] init];
+    
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"boardingCards"
+                                                                                  ofType:@"json"]];
+    
+    NSDictionary *boardingCards = [[NSJSONSerialization JSONObjectWithData:data
+                                                                   options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves
+                                                                     error:nil] objectForKey:@"boardingCards"];
+    
+    for (id card in boardingCards) {
+        
+        
+        DetailOfTransport *details = [[DetailOfTransport alloc] initDetailTransportWithVehicle:[card objectForKey:@"type"]
+                                                                                    withNumber:[card objectForKey:@"number"]
+                                                                                      withSeat:[card objectForKey:@"seat"]
+                                                                                      fromGate:[card objectForKey:@"gate"]
+                                                                                      withInfo:[card objectForKey:@"info"]];
+        
+        BoardingCard *boardingCard = [[BoardingCard alloc] initBoardingCardStartingFrom:[[card objectForKey:@"locations"] objectAtIndex:0]
+                                                                             arrivingTo:[[card objectForKey:@"locations"] objectAtIndex:1]
+                                                                                  using:details];
+        
+        [self.boardingCardsArray addObject:boardingCard];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,9 +80,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 10;
+    return self.boardingCardsArray.count;
 }
 
 
