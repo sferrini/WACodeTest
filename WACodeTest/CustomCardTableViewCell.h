@@ -10,4 +10,7 @@
 
 @interface CustomCardTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *travelSectionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *vehicleLabel;
+
 @end

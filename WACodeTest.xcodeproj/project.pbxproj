@@ -23,6 +23,9 @@
 		FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A8F193F0E2A00F6D3DD /* CardsTableViewController.m */; };
 		FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */; };
 		FC5D1A97193F0FDF00F6D3DD /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */; };
+		FC5D1A9A193F113D00F6D3DD /* boardingCards.json in Resources */ = {isa = PBXBuildFile; fileRef = FC5D1A99193F113D00F6D3DD /* boardingCards.json */; };
+		FC5D1AA0193F119800F6D3DD /* DetailOfTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A9D193F119800F6D3DD /* DetailOfTransport.m */; };
+		FC5D1AA1193F119800F6D3DD /* BoardingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D1A9F193F119800F6D3DD /* BoardingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,11 @@
 		FC5D1A93193F0E6700F6D3DD /* CustomCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCardTableViewCell.m; sourceTree = "<group>"; };
 		FC5D1A95193F0FDF00F6D3DD /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		FC5D1A99193F113D00F6D3DD /* boardingCards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boardingCards.json; sourceTree = "<group>"; };
+		FC5D1A9C193F119800F6D3DD /* DetailOfTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailOfTransport.h; sourceTree = "<group>"; };
+		FC5D1A9D193F119800F6D3DD /* DetailOfTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOfTransport.m; sourceTree = "<group>"; };
+		FC5D1A9E193F119800F6D3DD /* BoardingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardingCard.h; sourceTree = "<group>"; };
+		FC5D1A9F193F119800F6D3DD /* BoardingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +126,13 @@
 		FC5D1A5F193F0B1B00F6D3DD /* WACodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				FC5D1A9B193F115800F6D3DD /* Data */,
 				FC5D1A68193F0B1B00F6D3DD /* AppDelegate.h */,
 				FC5D1A69193F0B1B00F6D3DD /* AppDelegate.m */,
 				FC5D1A6B193F0B1B00F6D3DD /* Main.storyboard */,
 				FC5D1A91193F0E3900F6D3DD /* CardsTableViewController */,
 				FC5D1A98193F0FEA00F6D3DD /* ListViewController */,
+				FC5D1AA2193F11C700F6D3DD /* BoardingCard */,
 				FC5D1A71193F0B1B00F6D3DD /* Images.xcassets */,
 				FC5D1A60193F0B1B00F6D3DD /* Supporting Files */,
 			);
@@ -176,6 +186,25 @@
 				FC5D1A96193F0FDF00F6D3DD /* ListViewController.m */,
 			);
 			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		FC5D1A9B193F115800F6D3DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D1A99193F113D00F6D3DD /* boardingCards.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FC5D1AA2193F11C700F6D3DD /* BoardingCard */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D1A9C193F119800F6D3DD /* DetailOfTransport.h */,
+				FC5D1A9D193F119800F6D3DD /* DetailOfTransport.m */,
+				FC5D1A9E193F119800F6D3DD /* BoardingCard.h */,
+				FC5D1A9F193F119800F6D3DD /* BoardingCard.m */,
+			);
+			name = BoardingCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5D1A72193F0B1B00F6D3DD /* Images.xcassets in Resources */,
+				FC5D1A9A193F113D00F6D3DD /* boardingCards.json in Resources */,
 				FC5D1A64193F0B1B00F6D3DD /* InfoPlist.strings in Resources */,
 				FC5D1A6D193F0B1B00F6D3DD /* Main.storyboard in Resources */,
 			);
@@ -276,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5D1A97193F0FDF00F6D3DD /* ListViewController.m in Sources */,
+				FC5D1AA0193F119800F6D3DD /* DetailOfTransport.m in Sources */,
 				FC5D1A90193F0E2A00F6D3DD /* CardsTableViewController.m in Sources */,
 				FC5D1A6A193F0B1B00F6D3DD /* AppDelegate.m in Sources */,
 				FC5D1A94193F0E6700F6D3DD /* CustomCardTableViewCell.m in Sources */,
+				FC5D1AA1193F119800F6D3DD /* BoardingCard.m in Sources */,
 				FC5D1A66193F0B1B00F6D3DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

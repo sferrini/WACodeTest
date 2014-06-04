@@ -35,6 +35,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="travelSectionLabel" destination="gD8-uH-VuV" id="PrX-pu-n67"/>
+                                    <outlet property="vehicleLabel" destination="dII-mB-ofn" id="pH9-dD-xem"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
